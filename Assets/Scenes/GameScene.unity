@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1865,12 +1866,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -26453,6 +26454,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 490ec98acd582ed48a4d5cbb8d07b778, type: 3}
+--- !u!1001 &6592719348017532597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3090553338145160215, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_Name
+      value: Vent System
+      objectReference: {fileID: 0}
+    - target: {fileID: 3696643895966508810, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: mapBoundary
+      value: 
+      objectReference: {fileID: 49375163}
+    - target: {fileID: 4266487712550051986, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: mapBoundary
+      value: 
+      objectReference: {fileID: 49375163}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14668368
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.2956905
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15990257
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666881284307166135, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248926356164749804, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248926356164749804, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94207f0c8409f3043bef49bf8272ddbe, type: 3}
 --- !u!1001 &7930401494840115944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26508,6 +26582,14 @@ PrefabInstance:
     - target: {fileID: 5426345513336324606, guid: 16d6a8fcbef1527429bbe068c72d1e2c, type: 3}
       propertyPath: m_Name
       value: Emergency Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807806269867304383, guid: 16d6a8fcbef1527429bbe068c72d1e2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5807806269867304383, guid: 16d6a8fcbef1527429bbe068c72d1e2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 7636379902387727466, guid: 16d6a8fcbef1527429bbe068c72d1e2c, type: 3}
       propertyPath: mapBoundary
@@ -26592,3 +26674,4 @@ SceneRoots:
   - {fileID: 386680075}
   - {fileID: 2028493918011217029}
   - {fileID: 7930401494840115944}
+  - {fileID: 6592719348017532597}
