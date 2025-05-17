@@ -9,6 +9,8 @@ public class MenuController : MonoBehaviour
     public PauseController pauseController;
     public TimerController timerController;
 
+    [SerializeField] private float PenaltyTime;
+
 
     void Start()
     {
@@ -27,7 +29,10 @@ public class MenuController : MonoBehaviour
             menuCanvas.SetActive(!menuCanvas.activeSelf);
             PauseController.SetPause(menuCanvas.activeSelf);
 
-            timerController.PenaltyApplied();
+            if (menuCanvas.activeSelf)
+            {
+                timerController.PenaltyApplied(PenaltyTime);
+            }
             
         }
     }

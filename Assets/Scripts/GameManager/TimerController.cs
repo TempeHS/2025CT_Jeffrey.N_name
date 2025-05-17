@@ -9,9 +9,8 @@ public class TimerController : MonoBehaviour
 {
     public float StartTime;
     private float Timeleft;
-    [SerializeField] private float PenaltyTime;
 
-    public GameObject PenaltyText;
+    public TMP_Text PenaltyText;
     public TMP_Text TimerText;
 
     public MenuController menuController;
@@ -21,7 +20,7 @@ public class TimerController : MonoBehaviour
     private void Start()
     {
         Timeleft = StartTime; // Eventually will add a button when the game start
-        PenaltyText.SetActive(false); // the timer will happen but for now timer go when game start is fine
+        PenaltyText.gameObject.SetActive(false); // the timer will happen but for now timer go when game start is fine
     }
 
     private void Update()
@@ -71,24 +70,23 @@ public class TimerController : MonoBehaviour
         Timeleft = newTime;
     }
 
-    public void PenaltyApplied()
+    public void PenaltyApplied(float penalty)
     {
-        float currentTime = GetTimeLeft();
-
-        currentTime -= PenaltyTime;
-
+        float currentTime = Mathf.Max(0f, GetTimeLeft() - penalty);
         SetTimeLeft(currentTime);
 
         Debug.Log("Penalty Applied");
 
-        PenaltyText.SetActive(true);
+        PenaltyText.text = $"-{penalty:F2}";
+        PenaltyText.gameObject.SetActive(true);
+
         StartCoroutine(PenaltyTextTime());
     }
 
     IEnumerator PenaltyTextTime()
     {
         yield return new WaitForSeconds(2f);
-        PenaltyText.SetActive(false);
+        PenaltyText.gameObject.SetActive(false);
     }
 
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dfda315fd75582248afa1e9f87f31530
+guid: 515b0a2b3a5fa574ca9c2cf0b62d0d5e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniVault_0
+      name: MiniVault 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769d306b742f45440bf977fe73d3d756
-      internalID: 1234616955
+      spriteID: bb7223e321e7a1b4fbf7c9d3dc4a2779
+      internalID: 1643009395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniVault_1
+      name: MiniVault 1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a0ae6ac397979b41bd0c865ea5731c4
-      internalID: 2103353483
+      spriteID: b1b932e368e695d4586b877d5d5e8012
+      internalID: -1458890411
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MiniVault_0: 1234616955
-      MiniVault_1: 2103353483
+      MiniVault 1_0: 1643009395
+      MiniVault 1_1: -1458890411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

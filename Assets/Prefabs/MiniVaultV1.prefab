@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1390358009845355934}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00654481, y: 0.006108509, z: -0.000039980627, w: 0.99995995}
-  m_LocalPosition: {x: -0.45, y: 0.85, z: 0}
+  m_LocalPosition: {x: -0.08, y: 0.85, z: 0}
   m_LocalScale: {x: 0.75, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,7 +170,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: 0}
+  m_Offset: {x: -0.1, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 3587799940728773453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.83, y: -4.68, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -260,7 +260,7 @@ SpriteRenderer:
   m_SortingLayerID: -1599521037
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1234616955, guid: dfda315fd75582248afa1e9f87f31530, type: 3}
+  m_Sprite: {fileID: 1643009395, guid: 515b0a2b3a5fa574ca9c2cf0b62d0d5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -303,7 +303,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5, y: -0.15}
+  m_Offset: {x: -0.1, y: -0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -314,7 +314,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75, y: 3}
+  m_Size: {x: 2, y: 2.5}
   m_EdgeRadius: 0
 --- !u!114 &9087183077411264600
 MonoBehaviour:
@@ -332,4 +332,4 @@ MonoBehaviour:
   animator: {fileID: 1020259103921493532}
   VaultLoading: {fileID: 1390358009845355934}
   itemPrefab: {fileID: 4647766432317602899, guid: 197f58f7cfae0804e9a04b25e462efed, type: 3}
-  openedSprite: {fileID: 2103353483, guid: dfda315fd75582248afa1e9f87f31530, type: 3}
+  openedSprite: {fileID: -1458890411, guid: 515b0a2b3a5fa574ca9c2cf0b62d0d5e, type: 3}
