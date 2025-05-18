@@ -18,8 +18,9 @@ public class EmergenMapTransition : MonoBehaviour
     [SerializeField] private Animator animator;
     public GameObject EmergencyCollider1;
     public GameObject EmergencyCollider2;
-
-    private CinemachineConfiner confiner;
+    
+    PlayerMovement playerMovement;
+    CinemachineConfiner confiner;
 
     enum Direction { Up, Down, Left, Right };
 
@@ -27,6 +28,7 @@ public class EmergenMapTransition : MonoBehaviour
     {
         EmergencyCollider1.SetActive(false);
         EmergencyCollider2.SetActive(false);
+        playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
     private void Awake()
@@ -39,6 +41,8 @@ public class EmergenMapTransition : MonoBehaviour
     {   
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerMovement.trailRenderer.time = 0;
+
             confiner.m_BoundingShape2D = mapBoundary;
             UpdatePlayerPosition(collision.gameObject);
             UpdatePlayerPosition2(collision.gameObject);

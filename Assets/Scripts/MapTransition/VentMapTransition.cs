@@ -18,9 +18,16 @@ public class VentMapTransition : MonoBehaviour
     [SerializeField] private float VentCooldown;
     public Collider2D collider1;
     public Collider2D collider2;
-    private CinemachineConfiner confiner;
+    
+    PlayerMovement playerMovement;
+    CinemachineConfiner confiner;
 
     enum Direction { Up, Down, Left, Right };
+
+    private void Start()
+    {
+        playerMovement = FindObjectOfType<PlayerMovement>();
+    }
 
     private void Awake()
     {
@@ -32,6 +39,8 @@ public class VentMapTransition : MonoBehaviour
     {   
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerMovement.trailRenderer.time = 0;
+
             confiner.m_BoundingShape2D = mapBoundary;
             UpdatePlayerPosition(collision.gameObject);
             UpdatePlayerPosition2(collision.gameObject);

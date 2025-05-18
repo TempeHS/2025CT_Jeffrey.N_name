@@ -6,7 +6,6 @@ using UnityEngine;
 public class MenuController : MonoBehaviour
 {
     public GameObject menuCanvas;
-    public PauseController pauseController;
     public TimerController timerController;
 
     [SerializeField] private float PenaltyTime;

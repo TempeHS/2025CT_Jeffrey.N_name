@@ -8,10 +8,16 @@ public class MapTransition : MonoBehaviour
     [SerializeField] PolygonCollider2D mapBoundry;
     [SerializeField] Direction direction;
     [SerializeField] float Additivepos;
-
+    
+    PlayerMovement playerMovement;
     CinemachineConfiner confiner;
 
     enum Direction { Up, Down, Left, Right };
+
+    private void Start()
+    {
+        playerMovement = FindObjectOfType<PlayerMovement>();
+    }
 
     private void Awake()
     {

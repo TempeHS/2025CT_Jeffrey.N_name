@@ -331,5 +331,5 @@ MonoBehaviour:
   stealDuration: 6.5
   animator: {fileID: 1020259103921493532}
   VaultLoading: {fileID: 1390358009845355934}
-  itemPrefab: {fileID: 4647766432317602899, guid: 197f58f7cfae0804e9a04b25e462efed, type: 3}
+  itemPrefab: {fileID: 8055922588982993526, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
   openedSprite: {fileID: -1458890411, guid: 515b0a2b3a5fa574ca9c2cf0b62d0d5e, type: 3}

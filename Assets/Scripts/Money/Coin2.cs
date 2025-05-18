@@ -14,7 +14,7 @@ public class Coin2 : MonoBehaviour
     private Transform player;
     [SerializeField] private Animator animator;
     public GameObject Loading;
-    public CoinController coinController;
+    [HideInInspector] public CoinController coinController;
 
     void Start()
     {
@@ -44,6 +44,16 @@ public class Coin2 : MonoBehaviour
 
                 isMoneyGone = true;
             }
+        }
+
+        if (PauseController.IsGamePaused)
+        {
+            stealTime = 0;
+            if (animator != null) animator.Play("Loading", 0, 0f);
+
+            Debug.Log("Money2.0 Paused");
+
+            return;
         }
     }
     

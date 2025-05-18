@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour
 {
     public int value;
 
-    public CoinController coinController;
+    [HideInInspector] public CoinController coinController;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

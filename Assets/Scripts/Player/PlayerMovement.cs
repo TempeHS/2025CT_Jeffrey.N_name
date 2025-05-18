@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]  public bool isDashing;
     bool canDash = true;
 
-    TrailRenderer trailRenderer;
+    [HideInInspector] public TrailRenderer trailRenderer;
 
     void Start()
     {
@@ -103,6 +103,8 @@ public class PlayerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+
+        trailRenderer.time = 1;
 
         animatorDashIcon.SetBool("isDashGo", false);
     }

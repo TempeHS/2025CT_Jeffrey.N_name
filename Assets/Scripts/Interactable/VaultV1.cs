@@ -44,6 +44,16 @@ public class VaultV1 : MonoBehaviour
                 IsOpened = true;
             }
         }
+
+        if (PauseController.IsGamePaused)
+        {
+            stealTime = 0;
+            if (animator != null) animator.Play("VaultLoading", 0, 0f);
+
+            Debug.Log("Vault Paused");
+
+            return;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
