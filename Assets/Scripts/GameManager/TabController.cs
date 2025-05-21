@@ -26,7 +26,7 @@ public class TabController : MonoBehaviour
         PageImages[tabno].SetActive(true);
         TabImages[tabno].color = Color.white;
 
-        if (tabno ==0)
+        if (tabno == 0)
         {
             animatorMapOpen.SetBool("MapTabOpen", true);
         }

@@ -48,9 +48,7 @@ public class VaultV1 : MonoBehaviour
         if (PauseController.IsGamePaused)
         {
             stealTime = 0;
-            if (animator != null) animator.Play("VaultLoading", 0, 0f);
-
-            Debug.Log("Vault Paused");
+            if (animator == null) animator.Play("VaultLoading", 0, 0f);
 
             return;
         }

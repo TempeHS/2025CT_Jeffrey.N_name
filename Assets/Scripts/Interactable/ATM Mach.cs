@@ -48,9 +48,7 @@ public class ATMMach : MonoBehaviour
         if (PauseController.IsGamePaused)
         {
             stealTime = 0;
-            if (animator != null) animator.Play("ATMLoading", 0, 0f);
-
-            Debug.Log("ATM Paused");
+            if (animator == null) animator.Play("ATMLoading", 0, 0f);
 
             return;
         }
