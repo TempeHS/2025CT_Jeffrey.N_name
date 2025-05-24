@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Dash Settings")]
     [SerializeField] private Animator animatorDashIcon;
+    private float OriginalTrailTime;
     public float dashSpeed;
     public float dashDuration;
     public float dashCooldown;
@@ -25,10 +26,12 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public TrailRenderer trailRenderer;
 
     void Start()
-    {
+    {   
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         trailRenderer = GetComponent<TrailRenderer>();
+
+        OriginalTrailTime = trailRenderer.time;
 
     }
 
@@ -104,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
 
-        trailRenderer.time = 1;
+        trailRenderer.time = OriginalTrailTime;
 
         animatorDashIcon.SetBool("isDashGo", false);
     }
