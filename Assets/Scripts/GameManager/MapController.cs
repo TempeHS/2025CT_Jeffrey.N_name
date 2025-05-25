@@ -45,6 +45,9 @@ public class MapController : MonoBehaviour
         {
             currentArea.color = highlightColor;
             playerIconTransform.position = currentArea.GetComponent<RectTransform>().position;
+
+            playerIconTransform.SetParent(currentArea.transform.parent, false);
+            playerIconTransform.anchoredPosition = currentArea.GetComponent<RectTransform>().anchoredPosition;
         }
 
         else
