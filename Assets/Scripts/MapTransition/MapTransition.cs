@@ -19,6 +19,7 @@ public class MapTransition : MonoBehaviour
         playerMovement = FindObjectOfType<PlayerMovement>();
     }
 
+
     private void Awake()
     {
         confiner = FindObjectOfType<CinemachineConfiner>();
@@ -27,6 +28,8 @@ public class MapTransition : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerMovement.trailRenderer.time = 0;
+
             confiner.m_BoundingShape2D = mapBoundry;
             UpdatePlayerPosition(collision.gameObject);
 
