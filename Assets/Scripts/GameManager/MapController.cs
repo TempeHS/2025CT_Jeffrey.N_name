@@ -19,7 +19,7 @@ public class MapController : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
         }
@@ -29,7 +29,10 @@ public class MapController : MonoBehaviour
             Instance = this;
         }
 
-        mapImages = Map.GetComponentsInChildren<Image>().ToList();
+        mapImages = Map.GetComponentsInChildren<Image>(true).ToList();
+        Debug.Log("Found images: " + mapImages.Count); // Finds how many images are in the map
+
+        playerIconTransform.gameObject.SetActive(false);
     }
 
     public void HighlightArea(string areaName)
@@ -43,6 +46,8 @@ public class MapController : MonoBehaviour
 
         if (currentArea != null)
         {
+            playerIconTransform.gameObject.SetActive(true);
+
             currentArea.color = highlightColor;
             playerIconTransform.position = currentArea.GetComponent<RectTransform>().position;
 
@@ -52,6 +57,8 @@ public class MapController : MonoBehaviour
 
         else
         {
+            playerIconTransform.gameObject.SetActive(false);
+
             Debug.LogWarning("This area isn't found -> " + areaName);
         }
     }
