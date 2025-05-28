@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9079903916212030679}
   - component: {fileID: 8965764972982235556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EmergencyCollider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8082909786185615420}
   - component: {fileID: 8738877375927416}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EmergencyCollider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6566402919373104483}
   - component: {fileID: 3602641790244873802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 5893918476899413093}
   - component: {fileID: 6517124949439504363}
   - component: {fileID: 5391325703994366802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Emergency Door 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5807806269867304383}
   - component: {fileID: 2782181547389089451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Office1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436821273988687490}
   - component: {fileID: 3469208184965840957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Emergency Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8977989091415211005}
   - component: {fileID: 8454581403359904278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EmergencyIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 8776754825235963199}
   - component: {fileID: 3602337513718888720}
   - component: {fileID: 7636379902387727466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Emergency Door 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3197106876346535997}
   - component: {fileID: 1296286667049125260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EmergencyIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

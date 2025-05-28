@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5203361146685625570}
   - component: {fileID: 4438688790035160743}
   - component: {fileID: 1020259103921493532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VaultLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8749293692479913158}
   - component: {fileID: 818181646803039136}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 3283070962562071914}
   - component: {fileID: 1786871945409411129}
   - component: {fileID: 9087183077411264600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniVaultV1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

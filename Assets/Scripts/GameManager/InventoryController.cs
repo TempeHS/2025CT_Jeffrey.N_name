@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -11,10 +13,12 @@ public class InventoryController : MonoBehaviour
 {
     public GameObject inventoryPanel;
     public GameObject invSlotPrefab;
+    public Transform playerTransform;
 
     public int invSlotCount;
     private int selectedIndex = -1;
 
+    public LayerMask collisionLayer;
     public Key[] inventorykeys;
 
 
@@ -83,6 +87,51 @@ public class InventoryController : MonoBehaviour
             item.UseItem();
         }
 
+        else
+        {
+            Debug.Log("No Item is in use or in inventory");
+        }
+    }
+
+    public void Drop(InputAction.CallbackContext context)
+    {
+        if (context.performed && selectedIndex >= 0)
+        {
+            InvSlot invSlot = inventoryPanel.transform.GetChild(selectedIndex).GetComponent<InvSlot>();
+
+            if (invSlot.currentItem != null)
+            {
+                Item item = invSlot.currentItem.GetComponent<Item>();
+
+                Vector3 dropPosition;
+                float dropDistance = 2f;
+
+                if (!Physics2D.Raycast(playerTransform.position, Vector2.down, dropDistance, collisionLayer))
+                {
+                    dropPosition = playerTransform.position + Vector3.down * dropDistance;
+                }
+                else
+                {
+                    dropPosition = playerTransform.position + Vector3.up * dropDistance;
+                }
+
+                Instantiate(item.worldItemPrefab, dropPosition, Quaternion.identity);
+
+                DeleteItem();
+            }
+        }
+    }
+
+    public void DeleteItem()
+    {
+        InvSlot invSlot = inventoryPanel.transform.GetChild(selectedIndex).GetComponent<InvSlot>();
+
+        if (invSlot != null && invSlot.currentItem != null)
+        {
+            Destroy(invSlot.currentItem);
+
+            invSlot.currentItem = null;
+        }
         else
         {
             Debug.Log("No Item is in use or in inventory");

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2970717179570662736}
   - component: {fileID: 8773237496570033336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 195909143955407535}
   - component: {fileID: 2289372045801004253}
   - component: {fileID: 4487146252429411619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ATMLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 3451816870421793910}
   - component: {fileID: 6126470106022333070}
   - component: {fileID: 718832459450687909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ATM Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

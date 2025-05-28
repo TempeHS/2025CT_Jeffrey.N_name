@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    public GameObject worldItemPrefab;
+
     public virtual void UseItem()
     {
         Debug.Log("Using item" + name);

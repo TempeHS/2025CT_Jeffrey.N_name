@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6037514795739232315}
   - component: {fileID: 8054045879799135865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vent System Time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 4834416073412720623}
   - component: {fileID: 4575902734731634449}
   - component: {fileID: 9212839992389291634}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 3115854561297866353}
   - component: {fileID: 5033365103315643443}
   - component: {fileID: 8785162772626616484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

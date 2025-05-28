@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7132987838154290645}
   - component: {fileID: 6147030262044942668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vent System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 1087732323772199433}
   - component: {fileID: 1477507798871804993}
   - component: {fileID: 2052962710272711049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 2986255675286400108}
   - component: {fileID: 2537194239719451307}
   - component: {fileID: 5443379663481176615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
