@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]  public bool isDashing;
     bool canDash = true;
 
-    [HideInInspector] public TrailRenderer trailRenderer;
+    public TrailRenderer trailRenderer;
 
     void Start()
     {   

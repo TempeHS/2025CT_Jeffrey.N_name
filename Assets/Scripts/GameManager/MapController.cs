@@ -9,13 +9,16 @@ public class MapController : MonoBehaviour
 {
     public static MapController Instance { get; set; }
 
+    public RectTransform playerIconTransform;
     public GameObject Map;
-    List<Image> mapImages;
 
     public Color highlightColor = Color.yellow;
     public Color dimmedColor = new Color(1f, 1f, 1f, 0.8f);
 
-    public RectTransform playerIconTransform;
+    private int currentFloorIndex = 0;
+
+    [SerializeField] private List<GameObject> Floors;
+    List<Image> mapImages;
 
     private void Awake()
     {
@@ -30,7 +33,6 @@ public class MapController : MonoBehaviour
         }
 
         mapImages = Map.GetComponentsInChildren<Image>(true).ToList();
-        Debug.Log("Found images: " + mapImages.Count); // Finds how many images are in the map
 
         playerIconTransform.gameObject.SetActive(false);
     }
@@ -61,5 +63,19 @@ public class MapController : MonoBehaviour
 
             Debug.LogWarning("This area isn't found -> " + areaName);
         }
+    }
+
+    public void SwitchFloor(int floorIndex)
+    {
+        if (floorIndex < 0 || floorIndex >= Floors.Count) return;
+
+        currentFloorIndex = floorIndex;
+
+        for (int i = 0; i < Floors.Count; i++)
+        {
+            Floors[i].SetActive(i == floorIndex);
+        }
+
+        Debug.Log("Switched to Floor " + floorIndex);
     }
 }

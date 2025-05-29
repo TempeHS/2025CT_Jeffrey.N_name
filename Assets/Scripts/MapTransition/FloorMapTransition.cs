@@ -3,13 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapTransition : MonoBehaviour
+public class FloorMapTransition : MonoBehaviour
 {
     [SerializeField] private PolygonCollider2D mapBoundry;
     [SerializeField] private Direction direction;
+    [SerializeField] private int FloorIndex;
     [SerializeField] private float Additivepos;
     private float OriginalTrailTime;
-    
+
+
     PlayerMovement playerMovement;
     CinemachineConfiner confiner;
 
@@ -35,6 +37,7 @@ public class MapTransition : MonoBehaviour
             confiner.m_BoundingShape2D = mapBoundry;
             UpdatePlayerPosition(collision.gameObject);
 
+            MapController.Instance?.SwitchFloor(FloorIndex);
             MapController.Instance?.HighlightArea(mapBoundry.name);
         }
     }
@@ -50,7 +53,7 @@ public class MapTransition : MonoBehaviour
     {
         Vector3 newPos = player.transform.position;
 
-        switch(direction)
+        switch (direction)
         {
             case Direction.Up:
                 newPos.y += Additivepos;
