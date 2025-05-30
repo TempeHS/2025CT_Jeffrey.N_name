@@ -16,7 +16,7 @@ public class InventoryController : MonoBehaviour
     public Transform playerTransform;
 
     public int invSlotCount;
-    private int selectedIndex = -1;
+    [HideInInspector] public int selectedIndex = -1;
 
     public LayerMask collisionLayer;
     public Key[] inventorykeys;

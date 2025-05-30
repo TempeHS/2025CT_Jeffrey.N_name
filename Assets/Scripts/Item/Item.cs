@@ -5,6 +5,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public GameObject worldItemPrefab;
+    public string itemID;
 
     public virtual void UseItem()
     {
