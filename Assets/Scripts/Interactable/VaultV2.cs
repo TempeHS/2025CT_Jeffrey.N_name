@@ -69,11 +69,15 @@ public class VaultV2 : MonoBehaviour
 
             isStealing = true;
         }
+        else
+        {
+            Debug.Log("No item is equipped");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && isStealing && !HasVaultKeyEquipped())
+        if (other.CompareTag("Player") && isStealing)
         {
             Debug.Log("Vault Interuppted");
 
@@ -82,6 +86,17 @@ public class VaultV2 : MonoBehaviour
 
             isStealing = false;
             stealTime = 0;
+
+            if (!HasVaultKeyEquipped())
+            {
+                Debug.Log("Vault Interuppted");
+
+                if (animator != null) animator.Play("VaultLoading", 0, 0f);
+                VaultLoading.SetActive(false);
+
+                isStealing = false;
+                stealTime = 0;
+            }
         }
     }
 
