@@ -9,9 +9,11 @@ public class MapTransition : MonoBehaviour
     [SerializeField] private Direction direction;
     [SerializeField] private float Additivepos;
     private float OriginalTrailTime;
+    public float vcamSize = 6;
     
     PlayerMovement playerMovement;
     CinemachineConfiner confiner;
+    public CinemachineVirtualCamera vcam;
 
     enum Direction { Up, Down, Left, Right };
 
@@ -19,6 +21,7 @@ public class MapTransition : MonoBehaviour
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
         OriginalTrailTime = playerMovement.trailRenderer.time;
+        vcam = FindObjectOfType<CinemachineVirtualCamera>();
     }
 
 
@@ -34,6 +37,7 @@ public class MapTransition : MonoBehaviour
 
             confiner.m_BoundingShape2D = mapBoundry;
             UpdatePlayerPosition(collision.gameObject);
+            vcam.m_Lens.OrthographicSize = vcamSize;
 
             MapController.Instance?.HighlightArea(mapBoundry.name);
         }
