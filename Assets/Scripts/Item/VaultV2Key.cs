@@ -15,7 +15,5 @@ public class VaultV2Key : Item
     public override void UseItem()
     {
         Debug.Log("Using item" + name);
-
-        // QIUOEIOIOIUFFFF
     }
 }
