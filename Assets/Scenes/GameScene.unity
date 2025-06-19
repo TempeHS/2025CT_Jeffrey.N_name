@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -857,6 +858,71 @@ Transform:
   - {fileID: 816934500}
   m_Father: {fileID: 394376388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &37540332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5462573729028525312, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1419768784, guid: 049e391603fafd84c8cf694f04c8590f, type: 3}
+    - target: {fileID: 7365091292472804873, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: value
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055922588982993526, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_Name
+      value: Chicken
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8813332158846930157, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa7196a32da46b94e958a6d8d790a1b9, type: 3}
 --- !u!1 &61612066
 GameObject:
   m_ObjectHideFlags: 0
@@ -4741,12 +4807,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -142387,3 +142453,4 @@ SceneRoots:
   - {fileID: 25228069}
   - {fileID: 957203876}
   - {fileID: 86282409}
+  - {fileID: 37540332}

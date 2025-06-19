@@ -125,7 +125,18 @@
                 {
                     "name": "",
                     "id": "8409f045-74c3-4c0c-a18b-d7160a524d24",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "614c9241-34a1-4e17-85d2-82c9536ffee4",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -136,7 +147,7 @@
                 {
                     "name": "",
                     "id": "8a4b022b-faaf-4d8d-b38e-8058c506bd41",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
