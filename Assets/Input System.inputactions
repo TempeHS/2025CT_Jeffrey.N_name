@@ -146,6 +146,17 @@
                 },
                 {
                     "name": "",
+                    "id": "75559c49-b965-47ee-b921-88a9b5d0675a",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8a4b022b-faaf-4d8d-b38e-8058c506bd41",
                     "path": "<Keyboard>/space",
                     "interactions": "",
