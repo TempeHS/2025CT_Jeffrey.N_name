@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3059f837c93c8f4cbd00cecc8cbee7a
+guid: 97fb6d82a1099a24189fa0aa57356584
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0001-TopdownGameIntro_0
+      name: TopdownGameIntro_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6135370cf7d4347ba5ada2dc05ee86
-      internalID: 614398186
+      spriteID: 03853f15c8ce79b4c81138270b761008
+      internalID: -216781840
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0001-TopdownGameIntro_0: 614398186
+      TopdownGameIntro_0: -216781840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
