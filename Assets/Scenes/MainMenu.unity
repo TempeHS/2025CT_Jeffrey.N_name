@@ -881,7 +881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TitleScreen: {fileID: 673005088}
-  title: {fileID: 673005086}
   pressKey: {fileID: 1243706416}
 --- !u!1 &695621167
 GameObject:
