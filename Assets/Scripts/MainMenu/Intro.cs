@@ -68,12 +68,5 @@ public class Intro : MonoBehaviour
         yield return new WaitForSeconds(4f);
         Squirrel.SetBool("SquirrelDance", false);
         IntroBackground.SetBool("FadeOut", true);
-
-        yield return new WaitForSeconds(5f);
-        Destroy(IntroBackground);
-        Destroy(Squirrel);
-        Destroy(Loading);
-        Destroy(ExtraTexts);
-
     }
 }
