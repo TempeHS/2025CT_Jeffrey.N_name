@@ -66,19 +66,19 @@ public class ChooseGameMode : MonoBehaviour
 
     private IEnumerator End1()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("Game2"); // Would be Game1 but not done yet
     }
 
     private IEnumerator End2()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("Game2");
     }
 
     private IEnumerator End3()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(4f);
         SceneManager.LoadScene("Game2"); // Would be Game3 but not done yet
     }
 
