@@ -9,7 +9,7 @@ public class MapTransition : MonoBehaviour
     [SerializeField] private Direction direction;
     [SerializeField] private float Additivepos;
     private float OriginalTrailTime;
-    public float vcamSize = 6;
+    public float vcamSize = 7.5f;
     
     PlayerMovement playerMovement;
     CinemachineConfiner confiner;
