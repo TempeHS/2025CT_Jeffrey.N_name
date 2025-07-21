@@ -102,7 +102,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 16
+        width: 32
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,9 +121,9 @@ TextureImporter:
       name: White counter + open (32x16)_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
+        x: 0
+        y: 0
+        width: 32
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,48 +134,6 @@ TextureImporter:
       bones: []
       spriteID: 71abfde5ce353ec46b8de750f14b25b4
       internalID: -225782698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: White counter + open (32x16)_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 038ffeb21d8ce524fa63cb1d55bffca6
-      internalID: -2087766193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: White counter + open (32x16)_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: debcdf860e137ee40b003d3a39d2c89b
-      internalID: 392269874
       vertices: []
       indices: 
       edges: []
@@ -193,8 +151,6 @@ TextureImporter:
     nameFileIdTable:
       White counter + open (32x16)_0: -313475026
       White counter + open (32x16)_1: -225782698
-      White counter + open (32x16)_2: -2087766193
-      White counter + open (32x16)_3: 392269874
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,9 +6,11 @@ using UnityEngine;
 public class FloorMapTransition : MonoBehaviour
 {
     [SerializeField] private PolygonCollider2D mapBoundry;
-    [SerializeField] private Direction direction;
+    [SerializeField] private Direction direction1;
+    [SerializeField] private Direction direction2;
     [SerializeField] private int FloorIndex;
-    [SerializeField] private float Additivepos;
+    [SerializeField] private float Additivepos1;
+    [SerializeField] private float AdditivePos2;
     private float OriginalTrailTime;
 
 
@@ -36,6 +38,7 @@ public class FloorMapTransition : MonoBehaviour
 
             confiner.m_BoundingShape2D = mapBoundry;
             UpdatePlayerPosition(collision.gameObject);
+            UpdatePlayerPosition2(collision.gameObject);
 
             MapController.Instance?.SwitchFloor(FloorIndex);
             MapController.Instance?.HighlightArea(mapBoundry.name);
@@ -53,22 +56,48 @@ public class FloorMapTransition : MonoBehaviour
     {
         Vector3 newPos = player.transform.position;
 
-        switch (direction)
+        switch (direction1)
         {
             case Direction.Up:
-                newPos.y += Additivepos;
+                newPos.y += Additivepos1;
                 break;
 
             case Direction.Down:
-                newPos.y -= Additivepos;
+                newPos.y -= Additivepos1;
                 break;
 
             case Direction.Right:
-                newPos.x += Additivepos;
+                newPos.x += Additivepos1;
                 break;
 
             case Direction.Left:
-                newPos.x -= Additivepos;
+                newPos.x -= Additivepos1;
+                break;
+        }
+
+        player.transform.position = newPos;
+    }
+
+    private void UpdatePlayerPosition2(GameObject player)
+    {
+        Vector3 newPos = player.transform.position;
+
+        switch (direction2)
+        {
+            case Direction.Up:
+                newPos.y += AdditivePos2;
+                break;
+
+            case Direction.Down:
+                newPos.y -= AdditivePos2;
+                break;
+
+            case Direction.Right:
+                newPos.x += AdditivePos2;
+                break;
+
+            case Direction.Left:
+                newPos.x -= AdditivePos2;
                 break;
         }
 
