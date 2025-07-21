@@ -22,6 +22,6 @@ public class CoinController : MonoBehaviour
 
     private void UpdateCoinCount()
     {
-        countText.text = "Money = $" + Count.ToString();
+        countText.text = "$" + Count.ToString();
     }
 }
