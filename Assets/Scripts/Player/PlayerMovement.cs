@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 lastMoveInput = Vector2.down;
     private Animator animator;
+    public TrailRenderer trailRenderer;
 
     [Header("Dash Settings")]
     [SerializeField] private Animator animatorDashIcon;
@@ -20,10 +21,14 @@ public class PlayerMovement : MonoBehaviour
     public float dashDuration;
     public float dashCooldown;
 
+    [Header("Speed Settings")]
+    [SerializeField] private Animator animatorSpeedIcon;
+    [SerializeField] private float newSpeed;
+    public float speedDuration;
+    public float speedCooldown;
+
     [HideInInspector]  public bool isDashing;
     bool canDash = true;
-
-    public TrailRenderer trailRenderer;
 
     void Start()
     {   
@@ -85,6 +90,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Speed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            StartCoroutine(SpeedCoroutine());
+        }
+    }
+
     private IEnumerator DashCoroutine()
     {
         canDash = false;
@@ -110,6 +123,25 @@ public class PlayerMovement : MonoBehaviour
         trailRenderer.time = OriginalTrailTime;
 
         animatorDashIcon.SetBool("isDashGo", false);
+    }
+
+    private IEnumerator SpeedCoroutine()
+    {
+        animatorSpeedIcon.SetBool("isSpeedGo", true);
+
+        float OriginalSpeed = movespeed;
+        movespeed = newSpeed;
+
+        yield return new WaitForSeconds(speedDuration);
+
+        animatorSpeedIcon.SetBool("isSpeedGo", false);
+
+        movespeed = OriginalSpeed;
+
+        yield return new WaitForSeconds(speedCooldown);
+
+        animatorSpeedIcon.SetTrigger("Switch");
+
     }
     
 }
