@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 377612960832312998}
   - component: {fileID: 7791806509952573379}
   - component: {fileID: 1837388773713676725}
-  - component: {fileID: 3446707856579172918}
+  - component: {fileID: -7623962093289700569}
   m_Layer: 0
   m_Name: Lvl4Laser
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 24.75, y: 6.8790336, z: -0.0009073302}
-  m_LocalScale: {x: 7.5, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8759881, y: 0.8759881}
   m_EdgeRadius: 0
---- !u!114 &3446707856579172918
+--- !u!114 &-7623962093289700569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,9 +140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7077081092863481349}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 462cf57cbefbeaf4a91a0ed8c77f54de, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cf43de75ee4a824b8029a08de684983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  lifeTime: 0.3
-  penaltyTime: 15
+  speed: 8
+  lifeTime: 0.8
+  penaltyTime: 10
+  timerController: {fileID: 0}

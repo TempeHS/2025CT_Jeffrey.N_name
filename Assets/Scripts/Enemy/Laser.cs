@@ -12,7 +12,7 @@ public class Laser : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, lifeTime);
+        StartCoroutine(Explode());
     }
 
     private void Update()
@@ -31,5 +31,11 @@ public class Laser : MonoBehaviour
 
             Destroy(gameObject);
         }
+    }
+
+    private IEnumerator Explode()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(gameObject);
     }
 }

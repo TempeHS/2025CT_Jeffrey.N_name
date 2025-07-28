@@ -139,12 +139,18 @@ public class WayPointMover : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
-        animator.SetFloat("LastInputX", lastInputX);
+        /*animator.SetFloat("LastInputX", lastInputX);
         animator.SetFloat("LastInputY", lastInputY);
-        animator.SetBool("isWalking", true);
 
         lastInputX = direction.x;
-        lastInputY = direction.y;
+        lastInputY = direction.y;*/
+
+        animator.SetFloat("InputX", direction.x);
+        animator.SetFloat("InputY", direction.y);
+        animator.SetBool("isWalking", true);
+
+        animator.SetFloat("InputX", direction.x);
+        animator.SetFloat("InputY", direction.y);
     }
 
     void Shooting()
