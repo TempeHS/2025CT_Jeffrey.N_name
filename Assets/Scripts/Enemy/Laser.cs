@@ -7,7 +7,7 @@ public class Laser : MonoBehaviour
     public float speed;
     public float lifeTime;
     public float penaltyTime;
-
+    public LayerMask collisionLayer;
     public TimerController timerController;
 
     void Start()
@@ -29,6 +29,11 @@ public class Laser : MonoBehaviour
                 timerController.PenaltyApplied(penaltyTime);
             }
 
+            Destroy(gameObject);
+        }
+
+        if (collision.CompareTag("Collision"))
+        {
             Destroy(gameObject);
         }
     }
