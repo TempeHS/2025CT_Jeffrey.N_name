@@ -7,7 +7,6 @@ public class LaserV2 : MonoBehaviour
     public float speed;
     public float lifeTime;
     public float penaltyTime;
-
     public TimerController timerController;
 
     void Start()
@@ -31,6 +30,11 @@ public class LaserV2 : MonoBehaviour
                 timerController.PenaltyApplied(penaltyTime);
             }
 
+            Destroy(gameObject);
+        }
+
+        if (collision.CompareTag("Collision"))
+        {
             Destroy(gameObject);
         }
     }
