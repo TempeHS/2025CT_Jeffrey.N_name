@@ -19,6 +19,14 @@ public class PowerBox : MonoBehaviour
         Timer.enabled = false;
     }
 
+    private void Update()
+    {
+        if (PauseController.IsGamePaused)
+        {             
+            return;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

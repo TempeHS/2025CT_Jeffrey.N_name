@@ -148,7 +148,7 @@ MonoBehaviour:
   stealDuration: 1.75
   animator: {fileID: 5268506952415071083}
   coinController: {fileID: 0}
-  coinValue: 15000
+  coinValue: 7500
   ATMLoading: {fileID: 5759978523517102717}
   openedSprite: {fileID: 21300000, guid: 61d9ef6125a4f1848a994a3a112f6478, type: 3}
 --- !u!1 &5759978523517102717
@@ -223,7 +223,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -986061319
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2051663561, guid: d14a00bc6f45a694a8e1b83ea4b3f6f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
