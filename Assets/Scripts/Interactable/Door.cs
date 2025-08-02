@@ -6,7 +6,7 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     Animator animator;
-    public BoxCollider2D collider;
+    public BoxCollider2D theCollider;
     public Animator animatorText;
     public TMP_Text itemNeedText;
 
@@ -41,8 +41,8 @@ public class Door : MonoBehaviour
 
             if (heldItem == null)
             {
-                Debug.Log($"Need '{requiredItemID}' to unlock door");
-                itemNeedText.text = $"Need '{requiredItemID}' to unlock door";
+                Debug.Log($"Need {requiredItemID} to unlock door");
+                itemNeedText.text = $"Need {requiredItemID} to unlock door";
 
                 StartCoroutine(TextFade());
 
@@ -55,8 +55,8 @@ public class Door : MonoBehaviour
             }
             else
             {
-                Debug.Log($"Need '{requiredItemID}' to unlock door");
-                itemNeedText.text = $"Need '{requiredItemID}' to unlock door";
+                Debug.Log($"Need {requiredItemID} to unlock door");
+                itemNeedText.text = $"Need {requiredItemID} to unlock door";
 
                 StartCoroutine(TextFade());
             }
@@ -66,7 +66,8 @@ public class Door : MonoBehaviour
 
     void OpenDoor()
     {
-        collider.enabled = false;
+        theCollider.enabled = false;
+        itemNeedText.enabled = false;
 
         animator.SetBool("OpenDoor", true);
     }

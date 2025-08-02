@@ -12,6 +12,7 @@ public class VentMapTransition : MonoBehaviour
     [SerializeField] private Direction direction2;
     [SerializeField] private float additivePos1;
     [SerializeField] private float additivePos2;
+    public float vcamSize = 7.5f;
 
     [Header("Vent Components")]
     [SerializeField] private Animator animator;
@@ -21,12 +22,14 @@ public class VentMapTransition : MonoBehaviour
     
     PlayerMovement playerMovement;
     CinemachineConfiner confiner;
+    public CinemachineVirtualCamera vcam;
 
     enum Direction { Up, Down, Left, Right };
 
     private void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
+        vcam = FindObjectOfType<CinemachineVirtualCamera>();
     }
 
     private void Awake()
@@ -44,6 +47,7 @@ public class VentMapTransition : MonoBehaviour
             confiner.m_BoundingShape2D = mapBoundary;
             UpdatePlayerPosition(collision.gameObject);
             UpdatePlayerPosition2(collision.gameObject);
+            vcam.m_Lens.OrthographicSize = vcamSize;
 
             MapController.Instance?.HighlightArea(mapBoundary.name);
 
