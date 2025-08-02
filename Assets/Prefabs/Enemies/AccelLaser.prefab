@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserHolder: {fileID: 5477816578243647842}
-  detectionRange: 5
+  detectionRange: 6
   obstruction:
     serializedVersion: 2
     m_Bits: 118

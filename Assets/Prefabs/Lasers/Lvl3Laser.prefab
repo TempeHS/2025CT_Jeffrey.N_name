@@ -145,5 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9.5
   lifeTime: 1.5
-  penaltyTime: 4
+  penaltyTime: 3
   timerController: {fileID: 0}

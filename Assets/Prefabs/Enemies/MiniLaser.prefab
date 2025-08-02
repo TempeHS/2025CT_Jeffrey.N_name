@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   laserHolder: {fileID: 4816992653380095991}
-  detectionRange: 5
+  detectionRange: 5.75
   obstruction:
     serializedVersion: 2
     m_Bits: 118
@@ -207,7 +207,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   laserPrefab: {fileID: 2892330754100822957, guid: d0335b9adbe3a754d801e07aeb88f4f3, type: 3}
-  cooldown: 0.15
+  cooldown: 0.1
   waypointParent: {fileID: 2710909844304929346}
   moveSpeed: 2
   waitTime: 1

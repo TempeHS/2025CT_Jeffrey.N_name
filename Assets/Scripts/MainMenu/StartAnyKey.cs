@@ -28,10 +28,12 @@ public class StartAnyKey : MonoBehaviour
     void Update()
     {
 
-        if (Keyboard.current.anyKey.wasPressedThisFrame ||
-            Mouse.current.leftButton.wasPressedThisFrame ||
+        if (Mouse.current.leftButton.wasPressedThisFrame ||
             (Gamepad.current != null && Gamepad.current.wasUpdatedThisFrame && Gamepad.current.buttonSouth.wasPressedThisFrame))
         {
+            StartMusic.Instance?.stopMusic();
+            MusicManager.Instance?.startMusic();
+            
             Destroy(Intro);
             
             animator.SetBool("ZoomIn", true);
