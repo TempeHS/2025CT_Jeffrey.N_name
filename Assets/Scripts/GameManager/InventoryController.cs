@@ -154,4 +154,16 @@ public class InventoryController : MonoBehaviour
         }
             
     }
+
+    public Item GetSelectedItem()
+    {
+        if (selectedIndex < 0) return null;
+
+        Transform slotTransform = inventoryPanel.transform.GetChild(selectedIndex);
+        InvSlot slot = slotTransform.GetComponent<InvSlot>();
+
+        if (slot == null || slot.currentItem == null) return null;
+
+        return slot.currentItem.GetComponent<Item>();
+    }
 }

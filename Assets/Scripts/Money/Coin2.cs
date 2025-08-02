@@ -49,7 +49,11 @@ public class Coin2 : MonoBehaviour
         if (PauseController.IsGamePaused)
         {
             stealTime = 0;
-            if (animator != null) animator.Play("Loading", 0, 0f);
+
+            if (Loading.activeSelf && animator != null)
+            {
+                animator.Play("Loading", 0, 0f);
+            }
 
             Debug.Log("Money2.0 Paused");
 
@@ -82,9 +86,12 @@ public class Coin2 : MonoBehaviour
         {
             Debug.Log("Stealing interuppted");
 
-            if (animator != null) animator.Play("Loading", 0, 0f);
-            Loading.SetActive(false);
+            if (Loading.activeSelf && animator != null)
+            {
+                animator.Play("Loading", 0, 0f);
+            }
 
+            Loading.SetActive(false);
             isStealing = false;
             stealTime = 0;
         }

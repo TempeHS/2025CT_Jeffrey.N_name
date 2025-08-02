@@ -48,7 +48,7 @@ public class ATMMach : MonoBehaviour
         if (PauseController.IsGamePaused)
         {
             stealTime = 0;
-            if (animator != null && animator.gameObject.activeInHierarchy)
+            if (ATMLoading.activeSelf && animator != null)
             {
                 animator.Play("ATMLoading", 0, 0f);
             }
@@ -77,9 +77,12 @@ public class ATMMach : MonoBehaviour
         {
             Debug.Log("ATM interuppted");
 
-            if (animator != null) animator.Play("ATMLoading", 0, 0f);
-            ATMLoading.SetActive(false);
+            if (ATMLoading.activeSelf && animator != null)
+            {
+                animator.Play("ATMLoading", 0, 0f);
+            }
 
+            ATMLoading.SetActive(false);
             isStealing = false;
             stealTime = 0;
         }

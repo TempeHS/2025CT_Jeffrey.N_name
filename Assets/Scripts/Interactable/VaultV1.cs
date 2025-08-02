@@ -48,7 +48,11 @@ public class VaultV1 : MonoBehaviour
         if (PauseController.IsGamePaused)
         {
             stealTime = 0;
-            if (animator == null) animator.Play("VaultLoading", 0, 0f);
+
+            if (VaultLoading.activeSelf && animator != null)
+            {
+                animator.Play("VaultLoading", 0, 0f);
+            }
 
             return;
         }
@@ -74,9 +78,12 @@ public class VaultV1 : MonoBehaviour
         {
             Debug.Log("Vault Interuppted");
 
-            if (animator != null) animator.Play("VaultLoading", 0, 0f);
-            VaultLoading.SetActive(false);
+            if (VaultLoading.activeSelf && animator != null)
+            {
+                animator.Play("VaultLoading", 0, 0f);
+            }
 
+            VaultLoading.SetActive(false);
             isStealing = false;
             stealTime = 0;
         }
