@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerController : MonoBehaviour
 {
+    public Animator animator;
     public float StartTime;
     private float Timeleft;
 
@@ -15,7 +17,8 @@ public class TimerController : MonoBehaviour
 
     public MenuController menuController;
 
-    public Color EndColour = Color.green;
+    public Color EndColour;
+    public Color EscapeColour;
 
     private void Start()
     {
@@ -37,9 +40,9 @@ public class TimerController : MonoBehaviour
             else
             {
                 ChangeTextColour();
-                // Change colour text to green
-                // Soon if possible, change colour to green if you beat highscore, red if not
-
+                GameMusic.Instance?.stopMusic();
+                animator.SetTrigger("Escape");
+                SceneManager.LoadScene("Lose");
             }
         }
     }
@@ -47,6 +50,11 @@ public class TimerController : MonoBehaviour
     void ChangeTextColour()
     {
         TimerText.color = EndColour;
+    }
+
+    public void EscapeTextColour()
+    {
+        TimerText.color = EscapeColour;
     }
 
     void FormatToMinSec()

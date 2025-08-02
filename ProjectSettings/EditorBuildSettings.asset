@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Ending1.unity
+    guid: 882161f2cc2e42e45b2e0f768e11fd75
+  - enabled: 1
+    path: Assets/Scenes/Ending2.unity
+    guid: 2488fe71ee34ea247b0a1641fe10e106
+  - enabled: 1
+    path: Assets/Scenes/Ending3.unity
+    guid: cd90881036d8afc43b84236195a06cc5
+  - enabled: 1
+    path: Assets/Scenes/Ending4.unity
+    guid: b26101992cec9f5489dc8bf25ff452b1
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: c219883f89ee81d4d870cb6165932757
   m_configObjects: {}

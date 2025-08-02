@@ -67,6 +67,7 @@ public class Door : MonoBehaviour
     void OpenDoor()
     {
         theCollider.enabled = false;
+        activationDistance = 0;
         itemNeedText.enabled = false;
 
         animator.SetBool("OpenDoor", true);

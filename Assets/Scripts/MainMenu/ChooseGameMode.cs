@@ -67,6 +67,7 @@ public class ChooseGameMode : MonoBehaviour
     private IEnumerator End1()
     {
         yield return new WaitForSeconds(4f);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Game2"); // Would be Game1 but not done yet
 
         GameMusic.Instance?.startGameMusic();
@@ -75,6 +76,7 @@ public class ChooseGameMode : MonoBehaviour
     private IEnumerator End2()
     {
         yield return new WaitForSeconds(4f);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Game2");
 
         GameMusic.Instance?.startGameMusic();
@@ -83,6 +85,7 @@ public class ChooseGameMode : MonoBehaviour
     private IEnumerator End3()
     {
         yield return new WaitForSeconds(4f);
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Game2"); // Would be Game3 but not done yet
 
         GameMusic.Instance?.startGameMusic();

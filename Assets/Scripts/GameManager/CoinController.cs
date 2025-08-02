@@ -7,7 +7,7 @@ public class CoinController : MonoBehaviour
 {
     public TextMeshProUGUI countText;
 
-    private int Count = 0;
+    [HideInInspector] public int Count = 0;
 
     void Start()
     {

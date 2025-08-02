@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TabController : MonoBehaviour
@@ -11,7 +12,7 @@ public class TabController : MonoBehaviour
 
     void OnEnable()
     {
-        ActivateTab(1);
+        StartCoroutine(DelayedActivateTab(1));
 
     }
 
@@ -36,6 +37,12 @@ public class TabController : MonoBehaviour
         }
 
         
+    }
+
+    private IEnumerator DelayedActivateTab(int tabno)
+    {
+        yield return null; // Wait one frame
+        ActivateTab(tabno);
     }
 
 }

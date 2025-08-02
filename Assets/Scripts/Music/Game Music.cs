@@ -92,4 +92,12 @@ public class GameMusic : MonoBehaviour
 
         return musicPlaylist[Random.Range(0, musicPlaylist.Count)];
     }
+
+    public void stopMusic()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 }
