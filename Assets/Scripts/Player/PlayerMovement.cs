@@ -130,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
         animatorSpeedIcon.SetBool("isSpeedGo", true);
 
         float OriginalSpeed = movespeed;
-        movespeed = newSpeed;
+        movespeed += newSpeed;
 
         yield return new WaitForSeconds(speedDuration);
 
