@@ -25,6 +25,17 @@ public class ATMMach : MonoBehaviour
 
     void Update()
     {
+        if (PauseController.IsGamePaused)
+        {
+            stealTime = 0;
+            if (animator != null && animator.enabled && animator.gameObject.activeInHierarchy)
+            {
+                animator.Play("ATMLoading", 0, 0f);
+            }
+
+            return;
+        }
+
         if (isStealing && !IsOpened)
         {
             if (!ATMLoading.activeSelf) ATMLoading.SetActive(true);
@@ -43,17 +54,6 @@ public class ATMMach : MonoBehaviour
 
                 IsOpened = true;
             }
-        }
-
-        if (PauseController.IsGamePaused)
-        {
-            stealTime = 0;
-            if (ATMLoading.activeSelf && animator != null)
-            {
-                animator.Play("ATMLoading", 0, 0f);
-            }
-
-            return;
         }
     }
 

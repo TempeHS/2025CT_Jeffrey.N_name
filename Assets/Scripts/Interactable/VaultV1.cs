@@ -25,6 +25,18 @@ public class VaultV1 : MonoBehaviour
 
     void Update()
     {
+        if (PauseController.IsGamePaused)
+        {
+            stealTime = 0;
+
+            if (animator != null && animator.enabled && animator.gameObject.activeInHierarchy)
+            {
+                animator.Play("VaultLoading", 0, 0f);
+            }
+
+            return;
+        }
+
         if (isStealing && !IsOpened)
         {
             if (!VaultLoading.activeSelf) VaultLoading.SetActive(true);
@@ -43,18 +55,6 @@ public class VaultV1 : MonoBehaviour
 
                 IsOpened = true;
             }
-        }
-
-        if (PauseController.IsGamePaused)
-        {
-            stealTime = 0;
-
-            if (VaultLoading.activeSelf && animator != null)
-            {
-                animator.Play("VaultLoading", 0, 0f);
-            }
-
-            return;
         }
     }
 

@@ -18,6 +18,8 @@ public class TabController : MonoBehaviour
 
     public void ActivateTab(int tabno)
     {
+        Debug.Log("Tab activated: " + tabno);
+
         for (int i = 0; i < PageImages.Length; i++)
         {
             PageImages[i].SetActive(false);
@@ -41,7 +43,7 @@ public class TabController : MonoBehaviour
 
     private IEnumerator DelayedActivateTab(int tabno)
     {
-        yield return null; // Wait one frame
+        yield return new WaitForSecondsRealtime(0.25f);
         ActivateTab(tabno);
     }
 
