@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Speed Settings")]
     [SerializeField] private Animator animatorSpeedIcon;
     [SerializeField] private float newSpeed;
+    private bool isSpeedActive;
     public float speedDuration;
     public float speedCooldown;
 
@@ -92,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Speed(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !isSpeedActive)
         {
             StartCoroutine(SpeedCoroutine());
         }
@@ -127,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator SpeedCoroutine()
     {
+        isSpeedActive = false;
+
         animatorSpeedIcon.SetBool("isSpeedGo", true);
 
         float OriginalSpeed = movespeed;
@@ -141,6 +144,8 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(speedCooldown);
 
         animatorSpeedIcon.SetTrigger("Switch");
+
+        isSpeedActive = true;
 
     }
     
