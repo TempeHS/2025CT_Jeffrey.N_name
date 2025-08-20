@@ -84,12 +84,18 @@ public class InventoryController : MonoBehaviour
         if (invSlot.currentItem != null)
         {
             Item item = invSlot.currentItem.GetComponent<Item>();
+            item.isHeld = true;
             item.UseItem();
         }
 
         else
         {
             Debug.Log("No Item is in use or in inventory");
+            Item previousItem = GetSelectedItem();
+            if (previousItem != null)
+            {
+                previousItem.isHeld = false;
+            }
         }
     }
 

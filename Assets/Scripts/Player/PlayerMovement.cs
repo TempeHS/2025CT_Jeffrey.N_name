@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float movespeed;
+    [SerializeField] public float movespeed;
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Vector2 lastMoveInput = Vector2.down;
@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]  public bool isDashing;
     bool canDash = true;
+    bool canSprint = true;
 
     void Start()
     {   
@@ -92,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Speed(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canSprint)
         {
             StartCoroutine(SpeedCoroutine());
         }
@@ -127,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator SpeedCoroutine()
     {
+        canSprint = false;
+
         animatorSpeedIcon.SetBool("isSpeedGo", true);
 
         float OriginalSpeed = movespeed;
@@ -136,9 +139,10 @@ public class PlayerMovement : MonoBehaviour
 
         animatorSpeedIcon.SetBool("isSpeedGo", false);
 
-        newSpeed = OriginalSpeed;
+        movespeed = OriginalSpeed;
 
         yield return new WaitForSeconds(speedCooldown);
+        canSprint = true;
 
         animatorSpeedIcon.SetTrigger("Switch");
 
