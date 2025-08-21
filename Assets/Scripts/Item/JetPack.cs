@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class JetPack : Item
 {
-    PlayerMovement playerMovement;
-    [serializefield] private float newSpeed;
-    private float originalspeed;
-
-    private void Awake()
-    {
-        playerMovement = GetComponent<PlayerMovement>();
-    }
-
-    private void Start()
-    {
-        originalspeed = playerMovement.movespeed;
-    }
+    [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] private float newSpeed;
 
     private void Update()
     {
+        float originalspeed = playerMovement.movespeed;
+
         if (isHeld)
         {
-            playerMovement.movespeed = newSpeed;
+            playerMovement.movespeed += newSpeed;
         }
 
         else
