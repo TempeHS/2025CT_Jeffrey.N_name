@@ -5,20 +5,28 @@ using UnityEngine;
 public class JetPack : Item
 {
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] InventoryController inventory;
     [SerializeField] private float newSpeed;
+    private float originalspeed;
+    private bool changeSpeed = false;
+
+    private void Start()
+    {
+        originalspeed = playerMovement.movespeed;
+    }
 
     private void Update()
     {
-        float originalspeed = playerMovement.movespeed;
-
-        if (isHeld)
+        if (isHeld && !changeSpeed)
         {
             playerMovement.movespeed += newSpeed;
         }
 
-        else
+        if (!isHeld && changeSpeed)
         {
+            Debug.Log("Speed back to normal");
             playerMovement.movespeed = originalspeed;
+            changeSpeed = false;
         }
     }
 
