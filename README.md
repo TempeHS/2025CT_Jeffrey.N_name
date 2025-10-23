@@ -1,48 +1,92 @@
-# Project Title
+# <h1 align=center> :minidisc: 2025 Computer Tech Game Folio :minidisc: <br/> Roboto
 
-Game
+<h3 align=center> Jeffrey Ngo
 
-Simple overview of use/purpose.
+## Table of Contents :abacus:
 
-## Description
+- Gameplay Overview
+- Project Information
+   - General
+   - Objective
+   - Story
+- Main Features
+   - Main Menu
+   - Character Selection
+      - Character 1
+      - Character 2
+      - Character 3
+   - Enemies
+- Extra Features
+- Visual Sprites
+- Other
 
-An in-depth paragraph about your project and overview of use.
+## Gameplay Overview :video_camera:
 
-## Getting Started
+Hello
 
-### Dependencies
+## Project Information
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+### General
 
-### Installing
+<p align="justify"> In this game, "Roboto", you enter the game as one of three different blobs trying to steal as much money as possible from the three story bank before the time runs out. Each blob possesses two different abilities altering the games base mechanics and overall jist to the game. There are various features such as time penalties which lower the players time, making it more crucial whilst playing, and enemies that fire lasers, also lowering the player's time making it feel more engaging and fun. 
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Objective
 
-### Executing program
+<p align="justify"> 
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Story
 
-## Help
+Hello
+
+## Main Features
+
+### Main Menu
+
+Hello
+
+### Character Selection
+
+#### Character 1
+
+Hello
+
+#### Character 2
+
+Hello
+
+#### Character 3
+
+Hello
+
+### Enemies
+
+Hello
+
+## Extra Features
+
+Hello
+
+## Visual Sprites
+
+Hello
+
+## Other
+
+### Help
 
 Any advise for common problems or issues.
 ```
 command to run if program contains helper info
 ```
 
-## Authors
+### Authors
 
 Contributors names and contact info
 
 ex. Mr Jones
 ex. [@benpaddlejones](https://github.com/benpaddlejones)
 
-## Version History
+### Version History
 
 * 0.2
     * Various bug fixes and optimizations
@@ -50,11 +94,11 @@ ex. [@benpaddlejones](https://github.com/benpaddlejones)
 * 0.1
     * Initial Release
 
-## License
+### License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-## Acknowledgments
+### Acknowledgments
 
 Inspiration, code snippets, etc.
 * [Github md syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
