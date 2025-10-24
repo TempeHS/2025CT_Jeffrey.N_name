@@ -51,6 +51,11 @@ Hello
 | 2 | Inventory Slot 2 |
 | Space | Drop Item |
 
+**Xbox Controller**
+| Keybind | Action |
+| ----------- | ----------- |
+|  |  |
+
 ### Main Menu :clipboard:
 
 Hello
