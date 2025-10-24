@@ -8,8 +8,8 @@
 - Project Information
    - General
    - Objective
-   - Story
 - Main Features
+   - Controls
    - Main Menu
    - Character Selection
       - Character 1
@@ -32,15 +32,26 @@ Hello
 
 ### Objective
 
-<p align="justify"> 
+<p align="justify"> The main objective of this game is to steal as much money as possible within the given time frame whilst trying to lose as minimal time as possible. There are different variations of money ranging from a stack of cash worth $10,000 to a diamond worth $100,000 giving more choice to the game, allowing the player to decide what the most optimal path is. The three different classes can help the player decide which style they want to play which could aid them in making quicker moves and stealing more money. After your run, you have to escape through the van before the time runs out, giving the player incentive to plan ahead of there heist so they make it back on time. Different endings depend on the amount of money you have stolen, which makes the player want to beat the game by unlocking all the endings.
 
-### Story
+## Main Features :star:
 
-Hello
+### Controls :keyboard:
 
-## Main Features
+**Keyboard**
+| Keybind | Action |
+| ----------- | ----------- |
+| W | Walk Forward |
+| A | Walk Left |
+| S | Walk Down |
+| D | Walk Right |
+| Q | Ability 1 |
+| E | Ability 2 |
+| 1 | Inventory Slot 1 |
+| 2 | Inventory Slot 2 |
+| Space | Drop Item |
 
-### Main Menu
+### Main Menu :clipboard:
 
 Hello
 
