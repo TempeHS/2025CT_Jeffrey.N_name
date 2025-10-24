@@ -1,3 +1,5 @@
+<!-- This is a comment so I won't forget how to do one -->
+
 # <h1 align=center> :minidisc: 2025 Computer Tech Game Folio :minidisc: <br/> Roboto
 
 <h3 align=center> Jeffrey Ngo
@@ -38,6 +40,16 @@ Hello
 
 ### Controls :keyboard:
 
+**Main Menu**
+| Keybind | Action |
+| ----------- | ----------- |
+| ← | Go Left |
+| → | Go Right |
+| ↓ | Go Down |
+| ↑ | Go Up |
+| Enter | Move |
+
+
 **Keyboard**
 | Keybind | Action |
 | ----------- | ----------- |
@@ -58,7 +70,20 @@ Hello
 
 ### Main Menu :clipboard:
 
-Hello
+<p align="justify"> When opening the game, you are greeted with an intro showing year of the game, the developer and later game name all made by using Unity's animation. After the intro, you can press any key to zoom into the bullet board, which is the main menu. You then can use arrow keys and enter button to move around the bullet board to different places such as :
+
+**Settings :** In settings, you can use the slider bar to change the start music, background music and game music <br/>
+**Controls :** Controls show all the controls for the game <br/>
+**Tutorial :** Shows an entire slide showing each characters abilities <br/>
+**Credits :** Shows the people who made the game <br/>
+**Play :** Decide which character to play
+
+
+<img width="865" height="349" alt="image" src="https://github.com/user-attachments/assets/f0b9fe7f-0bab-4459-99f4-0dd671a4d255" /> <br/>
+Main Menu
+<!-- Image of main menu -->
+
+
 
 ### Character Selection
 
