@@ -83,7 +83,7 @@ Hello
 Main Menu
 <!-- Image of main menu -->
 
-[Main Menu Demo](Video%20Demo/Main%20Menu%20Demo.mp4)
+[Main Menu Demo](Video%20Demo/Main%20Menu%20Demo2%V2.mp4)
 
 ### Character Selection
 
