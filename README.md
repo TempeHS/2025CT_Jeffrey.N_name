@@ -83,14 +83,20 @@ Hello
 Main Menu
 <!-- Image of main menu -->
 
-[Main Menu Demo](Video%20Demo/Main%20Menu%20Demo%20V2.mp4)
-<!-- Video of Main Menu -->
+### Character Selection :ballot_box_with_check:
 
-### Character Selection
+<img width="855" height="478" alt="image" src="https://github.com/user-attachments/assets/76793475-a874-47cc-9f47-6b975dc42577" /> <br/>
+Character Selection
+<!-- Image of character selection -->
 
-#### Character 1
+<p align="justify"> By pressing the "Play" button in the main menu, the camera then moves down as if you are looking around the bullet board to the play section. In this section, the player then chooses between three characters each with it's own abilities changing the games mechanics. Each character chosen also changes the number of robots around the map, and the amount of damage they do, so each character isn't the exact same stuff but almost an entire new game mode the player can choose from. None of these characters are locked so the player is freely able to choose which ever character they feel like playing.
 
-Hello
+#### Character 1 : Ghost
+
+![Ghost Showcase](https://github.com/user-attachments/assets/eeed9192-a8f8-4fbf-9a18-af71ce7670a8)
+<!-- Demo of character Ghost -->
+
+<p align="justify"> Ghost is the first character choice in this game as changes up the game quite a lot. Most notably, it's ability too phase through anything across the whole map. The game requires you too collect items such as keycards in order to access more doors / vaults / areas of the map, but when you pick "Ghost", you can freely move around the map. But this character does have it's drawbacks such as being able to be 'one shot' by any robot in the game and a reduced timer only being 3 minutes. From the video above, I haven't implemented the unique abilities from each character yet.
 
 #### Character 2
 
