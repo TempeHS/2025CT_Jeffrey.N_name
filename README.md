@@ -20,6 +20,8 @@
    - Enemies
 - Extra Features
 - Visual Sprites
+- Scripting
+- Video Sources
 - Other
 
 ## Gameplay Overview :video_camera:
@@ -70,6 +72,10 @@ Hello
 
 ### Main Menu :clipboard:
 
+<img width="865" height="349" alt="image" src="https://github.com/user-attachments/assets/f0b9fe7f-0bab-4459-99f4-0dd671a4d255" /> <br/>
+Main Menu
+<!-- Image of main menu -->
+
 <p align="justify"> When opening the game, you are greeted with an intro showing year of the game, the developer and later game name all made by using Unity's animation. After the intro, you can press any key to zoom into the bullet board, which is the main menu. You then can use arrow keys and enter button to move around the bullet board to different places such as :
 
 **Settings :** In settings, you can use the slider bar to change the start music, background music and game music <br/>
@@ -78,10 +84,10 @@ Hello
 **Credits :** Shows the people who made the game <br/>
 **Play :** Decide which character to play
 
+##### How I did it
+<p align="justify"> It took a long time to decide on how I wanted to make for my main menu. I had alredy created a main menu before, by just following a tutorial on youtube for one of my other games to learn how unity worked, so I wanted to make something different while still in reach for making it. I then decided to create a bullet board, and since I knew how to use Unity's animation system, I was going to do that to make the camera move everytime you would press a button. Making most of the different sections were quite easy too, since most of them were just an image and some text on it (Controls, Credits). The Play section wasn't that hard either, as it only required some animations and 'yield return new WaitForSeconds' to then switch the scene. The tutorial section was just tedious as it required a massive chain of animations.
 
-<img width="865" height="349" alt="image" src="https://github.com/user-attachments/assets/f0b9fe7f-0bab-4459-99f4-0dd671a4d255" /> <br/>
-Main Menu
-<!-- Image of main menu -->
+<p align="justify"> The only problem I had whilst making the menu was making it Xbox compatible. I'm not sure if we still have to do that, but I knew that trying to make it compatible with Xbox later, would've been a much bigger struggle so I decided to try and do it now. I used Unity's new input system, input maps to do it.
 
 ### Character Selection :ballot_box_with_check:
 
@@ -91,22 +97,36 @@ Character Selection
 
 <p align="justify"> By pressing the "Play" button in the main menu, the camera then moves down as if you are looking around the bullet board to the play section. In this section, the player then chooses between three characters each with it's own abilities changing the games mechanics. Each character chosen also changes the number of robots around the map, and the amount of damage they do, so each character isn't the exact same stuff but almost an entire new game mode the player can choose from. None of these characters are locked so the player is freely able to choose which ever character they feel like playing.
 
+##### How I did it
+<p align="justify"> Instead of recreating every single animation sheet for every single character, I just used a sprite library which allowed me to copy all of the animation frame positions and replace it with different sprites so I could change character easily. I also got a sprite resolver which allows all of the animations to work.
+
+<p align="justify"> There was just one problem but it was a quick fix while doing this. I also did this for all my enemies in the game, but for some reason, it wouldn't work if some of the animations had more sprites than the original. Since my original sprites were four different frames, that meant that for all my other characters, I also had to make them only four frames each.
+
 #### Character 1 : Ghost
 
-![Ghost Showcase](https://github.com/user-attachments/assets/eeed9192-a8f8-4fbf-9a18-af71ce7670a8)
+![Ghost Demo Video](https://github.com/user-attachments/assets/73c4985d-3ea7-43ec-bc99-9c91ba3f9c8e)
+Ghost Demo
 <!-- Demo of character Ghost -->
 
-<p align="justify"> Ghost is the first character choice in this game as changes up the game quite a lot. Most notably, it's ability too phase through anything across the whole map. The game requires you too collect items such as keycards in order to access more doors / vaults / areas of the map, but when you pick "Ghost", you can freely move around the map. But this character does have it's drawbacks such as being able to be 'one shot' by any robot in the game and a reduced timer only being 3 minutes. From the video above, I haven't implemented the unique abilities from each character yet.
+<p align="justify"> "Ghost" is the first character choice in this game as changes up the game quite a lot. Most notably, it's ability too phase through anything across the whole map. The game requires you too collect items such as keycards in order to access more doors / vaults / areas of the map, but when you pick "Ghost", you can freely move around the map. But this character does have it's drawbacks such as being able to be 'one shot' by any robot in the game and a reduced timer only being 3 minutes. From the video above, I haven't implemented the unique abilities from each character yet.
 
-#### Character 2
+#### Character 2 : Normal
 
-Hello
+![Normal Demo Video](https://github.com/user-attachments/assets/4a074f75-843e-473f-9e91-ead9229dd5cf)
+Normal Demo
+<!-- Demo of character Normal -->
 
-#### Character 3
+<p align="justify"> The only completed character in my game is "Normal". This character is more like the basic character in the game, with both abiltities just being a simple dash mechanic and speed up. In this gamemode, you get five minutes to run around the bank trying to steal as much money as possible, and the robots in the game just deal damage.
 
-Hello
+#### Character 3 : Blitz
 
-### Enemies
+![Blitz Demo Video](https://github.com/user-attachments/assets/56b5deed-9fa4-4420-a0dc-57fb210e1131)
+Blitz Demo
+<!-- Just the animations for Blitz -->
+
+<p align="justify"> "Blitz" is the final character choice in this game and is meant to be a much more quicker pace of the game. one of the mechanics that was supposed to be in this game is being able to takedown robots with your weapon which is in the first inventory slot. There were also other weapons that were meant to be in the game but they're primarily used for support. But that mechanic was never implemented into the game to Blitz is more of just a harder version of normal since the robot count is meant to be five times more than usual. "Blitz's" first ability is just a much shorter in both length and cooldown dash when compared to "Normal". But it's save to say this game mode wasn't really completed at all.
+
+### Enemies :robot:
 
 Hello
 
@@ -118,14 +138,52 @@ Hello
 
 Hello
 
+## Scripting
+
+**All Scipts**
+- [Camera](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Defense/Cameras.cs)
+- [PowerBox](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Defense/PowerBox.cs)
+- [Bankbuilding](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Doors/BankBuilding.cs)
+- [Brown](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Doors/BrownDoor.cs)
+- [Laser](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Enemy/Laser.cs)
+- [LaserV2](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Enemy/LaserV2.cs)
+- [Waypoint Mover](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Enemy/WayPointMover.cs)
+- [Coin Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/CoinController.cs)
+- [Floor Tab Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/FloorTabController.cs)
+- [Game Stats](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/GameStats.cs)
+- [Inv Slot](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/InvSlot.cs)
+- [Inventory Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/InventoryController.cs)
+- [Map Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/MapController.cs)
+- [Menu Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/MenuController.cs)
+- [Pause Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/PauseController.cs)
+- [Tab Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/TabController.cs)
+- [Timer Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/TimerController.cs)
+
+**Main Menu**
+
+<img width="897" height="421" alt="image" src="https://github.com/user-attachments/assets/0956049b-a1e5-4cb2-a4a7-5352cd6a529d" /> <br/>
+Input Map
+<!-- Image of input map -->
+
+<img width="294" height="877" alt="image" src="https://github.com/user-attachments/assets/d99e2209-d254-4a1c-a7c8-eac78b661cd2" /> <img width="326" height="877" alt="image" src="https://github.com/user-attachments/assets/50aaa75e-f4cb-40a8-9041-9ac333569b65" /> <br/>
+Input Manager Script, Intro Script (Left to Right)
+<!-- Input Manager Script --> <!-- Intro Script -->
+
+<img width="1547" height="631" alt="image" src="https://github.com/user-attachments/assets/6af9d359-5fa3-49bd-b1cc-1cf6adbeb55e" /> <br/>
+Input Manager Animation
+<!-- Input Manager Animation -->
+
+**Character Selection**
+
+<img width="698" height="566" alt="image" src="https://github.com/user-attachments/assets/86a09d7e-958e-416e-8e28-30a6c12badfc" /> <br/>
+Sprite Library Editor
+<!-- Sprite Library Editor -->
+
+## Video Sources
+
+Hello
+
 ## Other
-
-### Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ### Authors
 
@@ -133,14 +191,6 @@ Contributors names and contact info
 
 ex. Mr Jones
 ex. [@benpaddlejones](https://github.com/benpaddlejones)
-
-### Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]() or see [branch]()
-* 0.1
-    * Initial Release
 
 ### License
 
