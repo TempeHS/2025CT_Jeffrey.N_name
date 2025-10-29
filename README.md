@@ -128,7 +128,20 @@ Blitz Demo
 
 ### Enemies :robot:
 
-Hello
+<img width="803" height="458" alt="image" src="https://github.com/user-attachments/assets/8210267c-19b2-491e-9fd4-550fab077060" /> <br/>
+Different Enemies
+<!-- All 5 different types of enemies in the game -->
+
+<p align="justify"> In my game there are 5 different types of enemies (robots) that attack the player when they get close. All the different enemies have different detection ranges, which they will then move towards player and fire lasers at the player. The variations for each enemy was easily done by changing the attack speed, and the penalty time through the laser prefab.
+
+#### How I did it
+
+<img width="438" height="340" alt="image" src="https://github.com/user-attachments/assets/30b606c0-6600-4da1-9115-2dda89a0400f" /> <br/>
+Functions shown in Unity
+<!-- Waypoint mover script -->
+
+<p align="justify"> All the enemies in my game run through two scripts. One for the functionality, kind of like the player movement and another script is for the laser. The animations are run exactly the same as the different players, through a sprite library.
+
 
 ## Extra Features
 
@@ -158,6 +171,36 @@ Hello
 - [Pause Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/PauseController.cs)
 - [Tab Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/TabController.cs)
 - [Timer Controller](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/GameManager/TimerController.cs)
+- [ATM](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/ATM%20Mach.cs)
+- [Breakable Glass](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/BreakableGlass.cs)
+- [Coin Add](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/CoinAdd.cs)
+- [Door](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/Door.cs)
+- [EscapeVan](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/EscapeVan.cs)
+- [VaultV1](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/VaultV1.cs)
+- [VaultV2](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Interactable/VaultV2.cs)
+- [Item](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Item/Item.cs)
+- [JetPack](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Item/JetPack.cs)
+- [Keycard](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Item/Keycard.cs)
+- [ChooseGamemode](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/ChooseGameMode.cs)
+- [Escape](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/Escape.cs)
+- [Input Manager](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/InputManager.cs)
+- [Intro](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/Intro.cs)
+- [Start Any Key](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/StartAnyKey.cs)
+- [Title](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/Title.cs)
+- [Tutorial](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MainMenu/Tutorial.cs)
+- [Emergency Map Transition](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/EmergenMapTransition.cs)
+- [Floor Map Transition](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/FloorMapTransition.cs)
+- [Hole](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/Hole.cs)
+- [Map Transition](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/MapTransition.cs)
+- [Vent Map Transition](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/VentMapTransition.cs)
+- [Vent Map Transition Time](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/MapTransition/VentMapTransitionTime.cs)
+- [Coin](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Money/Coin.cs)
+- [Coin2](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Money/Coin2.cs)
+- [Game Music](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Music/Game%20Music.cs)
+- [Music Manager](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Music/MusicManager.cs)
+- [Start Music](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Music/StartMusic.cs)
+- [Player Item Pickup](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Player/PlayerItemPickUp.cs)
+- [Player Movement](https://github.com/TempeHS/2025CT_Jeffrey.N_name/blob/main/Assets/Scripts/Player/PlayerMovement.cs)
 
 **Main Menu**
 
