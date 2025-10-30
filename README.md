@@ -42,17 +42,18 @@ Hello
 
 ### Controls :keyboard:
 
-**Main Menu**
+**Keyboard**
+
+Main Menu
 | Keybind | Action |
 | ----------- | ----------- |
 | ← | Go Left |
 | → | Go Right |
+| ↑| Go Up |
 | ↓ | Go Down |
-| ↑ | Go Up |
-| Enter | Move |
+| Enter | Submit |
 
-
-**Keyboard**
+Game
 | Keybind | Action |
 | ----------- | ----------- |
 | W | Walk Forward |
@@ -64,11 +65,33 @@ Hello
 | 1 | Inventory Slot 1 |
 | 2 | Inventory Slot 2 |
 | Space | Drop Item |
+| Tab | Pause |
 
 **Xbox Controller**
+
+Main Menu
 | Keybind | Action |
 | ----------- | ----------- |
-|  |  |
+| Left Joystick : Left | Go Left |
+| Left Joystick : Right | Go Right |
+| Left Joystick : Up | Go Up |
+| Left Joystick : Down | Go Down |
+| A | Submit |
+
+
+Game
+| Keybind | Action |
+| ----------- | ----------- |
+| Left Joystick : Forward | Walk Forward |
+| Left Joystick : Left | Walk Left |
+| Left Joystick : Down | Walk Down |
+| Left Joystick : Right | Walk Right |
+| Left Trigger | Ability 1 |
+| Right Trigger | Ability 2 |
+| *Unsresponsive* | Inventory Slot 1 |
+| *Unresponsive* | Inventory Slot 2 |
+| B | Drop Item |
+| *Unresponsive* | Pause |
 
 ### Main Menu :clipboard:
 
