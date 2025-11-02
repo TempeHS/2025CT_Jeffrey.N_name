@@ -26,7 +26,11 @@
 
 ## Gameplay Overview :video_camera:
 
-Hello
+https://github.com/user-attachments/assets/72af9d8c-5fee-4da4-b31d-a3c2e5accc71
+<!-- This showcase video was 95.4mb and the max was 100mb. Crazy. -->
+
+https://github.com/user-attachments/assets/d17de352-200b-4175-b52f-a9fd9d0b52ef
+<!-- Every single map in the game. Looks kinda laggy though -->
 
 ## Project Information
 
@@ -170,9 +174,24 @@ Functions shown in Unity
 
 Hello
 
-## Visual Sprites
+## Visual Sprites :paintbrush:
 
-Hello
+![Tile Palette Showcase](https://github.com/user-attachments/assets/9ecdbbcd-af20-42e3-a30f-9e281e30e8e1) <br/>
+Tile Palette Showcase
+<!-- Shows all the tile palette sprites -->
+
+<p align="justify"> Most sprites in the game were added using Unity's tile palette mechanic. This allows sprites to be made like painting. My game consisted of one large map with around thirty rooms for the player to explore. Each room is filled with other sprites that were either added in by hand or by tile palette. Some of the sprites aren't shown in the tile palettes because they were functional sprites that needed to be added in by hand. Some of these items were bins that the player could search, or cameras that would make the player lose time whenever they entered the room.
+
+#### How I did it
+
+<p align="justify"> Most of the sprites were made in an app called 'Aseprite'. I found that this was the best tool to easily make sprites and create massive animations such as the title animation and the player selection animations. Although, I did use another app called 'Piskel' which I mainly used for all of the player and enemy animations, since they were small and repetitve too do. Overall though, the biggest problem I had was juggling between the two softwares keybinds. I originally was used to using the 'Piskel' keybinds but then switched over to asesprite as the tools were easier and better such as using the mouse scroll wheel to change the size of the brush. Some of the sprites were never added into the game such as the watermelon pedestal, because it required more coding to actually make that section of the game functional.
+
+![All Sprites Showcase](https://github.com/user-attachments/assets/a138c037-f2ea-4db1-b0f4-ecd55e4ed875) <img width="321" height="512" alt="image" src="https://github.com/user-attachments/assets/7b25ff97-1e0f-460b-918b-905a7a435b03" /> <br/>
+All Sprite Showcase, Organized Files (Left to Right)
+<!-- All sprites ever made, Files in Unity -->
+
+
+
 
 ## Scripting
 
