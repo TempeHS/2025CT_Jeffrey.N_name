@@ -6,32 +6,32 @@
 
 ## Table of Contents :abacus:
 
-- Gameplay Overview
-- Project Information
-   - General
-   - Objective
-- Main Features
-   - Controls
-   - Main Menu
-   - Character Selection
-      - Character 1
-      - Character 2
-      - Character 3
-   - Enemies
-- Extra Features
-   - Searching
-   - Vents / Holes
-   - Lasers and Cameras
-   - Trophies
-   - Keycards
-   - Escape Van
-- Unadded Features
-   - Breakable Glass
-   - The Last Melon
-- Visual Sprites
-- Scripting
-- Video Sources
-- Other
+- [Gameplay Overview](#Gameplay-Overview)
+- [Project Information](#Project-Information)
+   - [General](#General)
+   - [Objective](#Objective)
+- [Main Features](#Main-Features)
+   - [Controls](#Controls)
+   - [Main Menu](#Main-Menu)
+   - [Character Selection](#Character-Selection)
+      - [Character 1](#Character-1)
+      - [Character 2](#Character-2)
+      - [Character 3](#Character-3)
+   - [Enemies](#Enemies)
+- [Extra Features](#Extra-Features)
+   - [Searching](#Searching)
+   - [Vents / Holes](#Vents-/-Holes)
+   - [Lasers and Cameras](#Lasers-and-Cameras)
+   - [Trophies](#Trophies)
+   - [Keycards](#Keycards)
+   - [Escape Van](#Escape-Van)
+- [Unadded Features](#unadded-Features)
+   - [Breakable Glass](#Breakable-Glass)
+   - [The Last Melon](#The-Last-Melon)
+- [Visual Sprites](#Visual-Sprites)
+- [Scripting](#Scripting)
+- [Video Sources](#Video-Sources)
+- [Other](#Other)
 
 ## Gameplay Overview :video_camera:
 
@@ -346,6 +346,28 @@ Sprite Library Editor
 ## Video Sources
 
 <!-- LAST THING LEFT JUST DO THIS AND I AM DONE I HOPE I DON'T FORGET ABOUT THIS -->
+
+**All Tutorials**
+| Function | Tutorial |
+| ----------- | ----------- |
+| Player Movement | https://www.youtube.com/watch?v=DQY62meLVCk |
+| Player Movement Animation | https://www.youtube.com/watch?v=82U4ToJU-28 |
+| Camera Following & Boundries | https://www.youtube.com/watch?v=kV9rVinFyAk |
+| Tile Map Layers | https://www.youtube.com/watch?v=UId0mwanBZg |
+| Sprite Library Setup | https://www.youtube.com/watch?v=4xPHqEEa-V0 |
+| Dashing | https://www.youtube.com/watch?v=721TkkJ-CNM |
+| Map Transition | https://www.youtube.com/watch?v=9r9YbHsjSKs |
+| Pause Menu | https://www.youtube.com/watch?v=liba3xGI4gM |
+| Map Menu | https://www.youtube.com/watch?v=gjvTKhBvDX0 |
+| Inventory | https://www.youtube.com/watch?v=wlBJ0yZOYfM |
+| Pickup Items | https://www.youtube.com/watch?v=qQ0ECbgaAKk |
+| Timer | https://www.youtube.com/watch?v=T0atxxGoOlE |
+| Pickup Coins | https://learn.unity.com/project/roll-a-ball |
+| Pause Game | https://www.youtube.com/watch?v=fspxIduosYQ |
+| Searching | https://www.youtube.com/watch?v=MPP9GLp44Pc |
+| Waypoint Control | https://www.youtube.com/watch?v=40oTxM6cSYw |
+| Music | https://www.youtube.com/watch?v=Kg7Ix9tpPYg |
+| Win / Lose | https://learn.unity.com/project/roll-a-ball |
 
 ## Other
 
