@@ -6,32 +6,32 @@
 
 ## Table of Contents :abacus:
 
-- [Gameplay Overview](#Gameplay-Overview)
-- [Project Information](#Project-Information)
-   - [General](#General)
-   - [Objective](#Objective)
-- [Main Features](#Main-Features:star:)
-   - [Controls](#Controls :musical_keyboard:)
-   - [Main Menu](#Main-Menu:clipboard:)
-   - [Character Selection](#Character-Selection:ballot_box_with_check:)
-      - [Character 1](#Character-1:ghost:)
-      - [Character 2](#Character-2:balloon:)
-      - [Character 3](#Character-3:crossed_swords:)
-   - [Enemies](#Enemies:robot:)
-- [Extra Features](#Extra-Features:star2:)
-   - [Searching](#Searching:file_cabinet:)
-   - [Vents / Holes](#Vents-/-Holes:hole:)
-   - [Lasers and Cameras](#Lasers-and-Cameras:camera:)
-   - [Trophies](#Trophies:trophy:)
-   - [Keycards](#Keycards:credit_card:)
-   - [Escape Van](#Escape-Van:blue_car:)
-- [Unadded Features](#unadded-Features:stars:)
-   - [Breakable Glass](#Breakable-Glass:door:)
-   - [The Last Melon](#The-Last-Melon:watermelon:)
-- [Visual Sprites](#Visual-Sprites:paintbrush:)
-- [Scripting](#Scripting)
-- [Video Sources](#Video-Sources)
-- [Other](#Other)
+- [Gameplay Overview]
+- [Project Information]
+   - [General]
+   - [Objective]
+- [Main Features]
+   - [Controls]
+   - [Main Menu]
+   - [Character Selection]
+      - [Character 1]
+      - [Character 2]
+      - [Character 3]
+   - [Enemies]
+- [Extra Features]
+   - [Searching]
+   - [Vents / Holes]
+   - [Lasers and Cameras]
+   - [Trophies]
+   - [Keycards]
+   - [Escape Van]
+- [Unadded Features]
+   - [Breakable Glass]
+   - [The Last Melon]
+- [Visual Sprites]
+- [Scripting]
+- [Video Sources]
+- [Other]
 
 ## Gameplay Overview :video_camera:
 
