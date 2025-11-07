@@ -6,32 +6,32 @@
 
 ## Table of Contents :abacus:
 
-- [Gameplay Overview]
-- [Project Information]
-   - [General]
-   - [Objective]
-- [Main Features]
-   - [Controls]
-   - [Main Menu]
-   - [Character Selection]
-      - [Character 1]
-      - [Character 2]
-      - [Character 3]
-   - [Enemies]
-- [Extra Features]
-   - [Searching]
-   - [Vents / Holes]
-   - [Lasers and Cameras]
-   - [Trophies]
-   - [Keycards]
-   - [Escape Van]
-- [Unadded Features]
-   - [Breakable Glass]
-   - [The Last Melon]
-- [Visual Sprites]
-- [Scripting]
-- [Video Sources]
-- [Other]
+- Gameplay Overview
+- Project Information
+   - General
+   - Objective
+- Main Features
+   - Controls
+   - Main Menu
+   - Character Selection
+      - Character 1
+      - Character 2
+      - Character 3
+   - Enemies
+- Extra Features
+   - Searching
+   - Vents / Holes
+   - Lasers and Cameras
+   - Trophies
+   - Keycards
+   - Escape Van
+- Unadded Features
+   - Breakable Glass
+   - The Last Melon
+- Visual Sprites
+- Scripting
+- Video Sources
+- Other
 
 ## Gameplay Overview :video_camera:
 
@@ -49,7 +49,7 @@ https://github.com/user-attachments/assets/dfa51531-cbb6-4dea-b27b-dd8f0bbc543e
 
 ### Objective
 
-<p align="justify"> The main objective of this game is to steal as much money as possible within the given time frame whilst trying to lose as minimal time as possible. There are different variations of money ranging from a stack of cash worth $10,000 to a diamond worth $100,000 giving more choice to the game, allowing the player to decide what the most optimal path is. The three different classes can help the player decide which style they want to play which could aid them in making quicker moves and stealing more money. After your run, you have to escape through the van before the time runs out, giving the player incentive to plan ahead of there heist so they make it back on time. Different endings depend on the amount of money you have stolen, which makes the player want to beat the game by unlocking all the endings.
+<p align="justify"> The main objective of this game is to steal as much money as possible within the given time frame whilst trying to lose as minimal time as possible. There are different variations of money ranging from a stack of cash worth $10,000 to a diamond worth $100,000 giving more choice to the game, allowing the player to decide what the most optimal path is. The three different classes can help the player decide which style they want to play which could aid them in making quicker moves and stealing more money. After your run, you have to escape through the van before the time runs out, giving the player incentive to plan ahead of their heist so they make it back on time. Different endings depend on the amount of money you have stolen, which makes the player want to beat the game by unlocking all the endings.
 
 ## Main Features :star:
 
@@ -115,8 +115,8 @@ Main Menu
 <p align="justify"> When opening the game, you are greeted with an intro showing year of the game, the developer and later game name all made by using Unity's animation. After the intro, you can press any key to zoom into the bullet board, which is the main menu. You then can use arrow keys and enter button to move around the bullet board to different places such as :
 
 **Settings :** In settings, you can use the slider bar to change the start music, background music and game music <br/>
-**Controls :** Controls show all the controls for the game <br/>
-**Tutorial :** Shows an entire slide showing each characters abilities <br/>
+**Controls :** Controls show all the keybinds for the game <br/>
+**Tutorial :** Shows an entire slide show showing each characters abilities <br/>
 **Credits :** Shows the people who made the game <br/>
 **Play :** Decide which character to play
 
@@ -144,7 +144,7 @@ Character Selection
 Ghost Demo
 <!-- Demo of character Ghost -->
 
-<p align="justify"> "Ghost" is the first character choice in this game as changes up the game quite a lot. Most notably, it's ability too phase through anything across the whole map. The game requires you too collect items such as keycards in order to access more doors / vaults / areas of the map, but when you pick "Ghost", you can freely move around the map. But this character does have it's drawbacks such as being able to be 'one shot' by any robot in the game and a reduced timer only being 3 minutes. From the video above, I haven't implemented the unique abilities from each character yet.
+<p align="justify"> "Ghost" is the first character choice in this game as changes up the game quite a lot. Most notably, it's ability to phase through anything across the whole map. The game requires you too collect items such as keycards in order to access more doors / vaults / areas of the map, but when you pick "Ghost", you can freely move around the map. But this character does have it's drawbacks such as being able to be 'one shot' by any robot in the game and a reduced timer only being 3 minutes. From the video above, I haven't implemented the unique abilities from each character yet.
 
 #### Character 2 : Normal :balloon:
 
@@ -172,8 +172,11 @@ Different Enemies
 
 #### How I did it
 
-<img width="438" height="327" alt="image" src="https://github.com/user-attachments/assets/30b606c0-6600-4da1-9115-2dda89a0400f" /> <img width="439" height="327" alt="image" src="https://github.com/user-attachments/assets/b6007c28-6383-424e-a5d5-aabdad63cc9c" /> <br/> 
-Waypoint Mover script, Laser script (Left to Right)
+<img width="438" height="327" alt="image" src="https://github.com/user-attachments/assets/30b606c0-6600-4da1-9115-2dda89a0400f" /> <br/>
+Waypoint Mover script
+
+<img width="439" height="327" alt="image" src="https://github.com/user-attachments/assets/b6007c28-6383-424e-a5d5-aabdad63cc9c" /> <br/> 
+Laser script
 <!-- Waypoint mover script, Laser script -->
 
 <p align="justify"> All the enemies in my game run through two scripts. One for the functionality, kind of like the player movement and another script is for the laser. The animations are run exactly the same as the different players, through a sprite library. Both scripts were done by following a tutorial, which taught how to make the enemy move and create animations for the movement. 
@@ -191,8 +194,11 @@ Bins outside
 
 ### Vents / Holes :hole:
 
-<img width="500" height="390" alt="image" src="https://github.com/user-attachments/assets/97688276-a71c-4a3e-9cc0-60ab2ceb4053" /> <img width="500" height="390" alt="image" src="https://github.com/user-attachments/assets/474a77cd-c9e6-4daa-87cd-2de00dd43b12" /> <br/>
-Showcase of a hole, Red Vent (Left to Right)
+<img width="500" height="390" alt="image" src="https://github.com/user-attachments/assets/97688276-a71c-4a3e-9cc0-60ab2ceb4053" /> <br/>
+Showcase of a hole
+
+<img width="500" height="390" alt="image" src="https://github.com/user-attachments/assets/474a77cd-c9e6-4daa-87cd-2de00dd43b12" /> <br/>
+Red Vent
 <!-- Hole, Red Vent -->
 
 <p align="justify"> Vents / Holes are another extra feature towards the game. It allows the player to move around much more, by going through vents or holes which teleport them to another area. It makes the game feel more connected, as there are extra ways to move around the map. The difference between vents and holes are that vents have a cooldown whenever the player goes through it. Red vents also give a time penalty whenever the player goes through but have a much shorter cooldown when compared to the regular one.
