@@ -18,6 +18,7 @@ public class InputManager : MonoBehaviour
     public GameObject toHowToPlayBack;
     public GameObject toControls;
     public GameObject toCredits;
+    public GameObject toLeavebutton;
 
     public void ToPlay()
     {
@@ -87,5 +88,13 @@ public class InputManager : MonoBehaviour
         Debug.Log("Play button pressed");
         animator.SetTrigger("ToHowToPlayBack");
         EventSystem.current.SetSelectedGameObject(toCredits);
+    }
+
+    public void ToLeave()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        Application.Quit();
     }
 }

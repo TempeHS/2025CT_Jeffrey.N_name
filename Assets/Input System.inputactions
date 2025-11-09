@@ -167,7 +167,7 @@
                 {
                     "name": "",
                     "id": "7fb68592-b4c3-488d-861a-a05d3e54b4f4",
-                    "path": "<XInputController>/leftTrigger",
+                    "path": "<XInputController>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -224,7 +224,7 @@
                 {
                     "name": "up",
                     "id": "14a5d6e8-4aaf-4119-a9ef-34b8c2c548bf",
-                    "path": "<XInputController>/leftStick/up",
+                    "path": "<XInputController>/rightStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -235,7 +235,7 @@
                 {
                     "name": "down",
                     "id": "2db08d65-c5fb-421b-983f-c71163608d67",
-                    "path": "<XInputController>/leftStick/down",
+                    "path": "<XInputController>/rightStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -246,7 +246,7 @@
                 {
                     "name": "left",
                     "id": "8ba04515-75aa-45de-966d-393d9bbd1c14",
-                    "path": "<XInputController>/leftStick/left",
+                    "path": "<XInputController>/rightStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
@@ -257,7 +257,7 @@
                 {
                     "name": "right",
                     "id": "fcd248ae-a788-4676-a12e-f4d81205600b",
-                    "path": "<XInputController>/leftStick/right",
+                    "path": "<XInputController>/rightStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
